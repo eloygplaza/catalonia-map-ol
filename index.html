@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalonia Capital Cities Tour Map</title>
+    <link rel="stylesheet" href="./libs/v6.15.1-dist/ol.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="column-navigation">
+                <a title="Home" id="home" class="active"><i class="fa-solid fa-house" id="home"></i></a>
+                <a title="Girona" id="girona"><i class="fa-regular fa-circle" id="girona"></i></a>
+                <a title="Lleida" id="lleida"><i class="fa-regular fa-circle" id="lleida"></i></a>
+                <a title="Tarragona" id="tarragona"><i class="fa-regular fa-circle" id="tarragona"></i></a>
+                <a title="Barcelona" id="barcelona"><i class="fa-regular fa-circle" id="barcelona"></i></a>
+            </div>
+
+        </div>
+        <div class="grid-2">
+            <div class="column-map" id="openlayers-map"></div>
+
+        </div>
+
+        <div class="grid-3">
+            <div class="column-menu" id="menu-information">
+                <p id="cityname">Welcome to Catalonia Capital Cities Tour Map</p>
+                <img id="cityimage" src="./data/images/catalonia_flag.jpg" alt="Catalonia Flag">
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="overlay-container">
+        <span class="overlay-text" id="feature-name"></span>
+        <span class="overlay-text" id="feature-additional-info"></span>
+    </div> -->
+
+    <script src="./libs/v6.15.1-dist/ol.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
